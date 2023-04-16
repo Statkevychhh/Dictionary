@@ -44,7 +44,7 @@ bmw.info()
 
 #   3) Інкапсуляція
 class Kettle:
-    def turn_on(self,):
+    def turn_on(self):
         print('Нажали кнопку включення')
         self.__boil()
         self.__check_temperature()
@@ -107,4 +107,37 @@ Airbus = Plane('Airbus', 'A320', passenger = 176)
 print(Airbus.__dict__)
 
 
-#   5)
+#   5)Поліморфізм
+class Animal:
+    legs = 4
+    tail = 1
+
+    def voice(self):
+        print('Якийсь звук')
+    
+
+class Cat(Animal):
+    
+    def voice(Animal):
+        print('Мяв-мяв')
+
+class Dog(Animal):
+    
+    def voice(Animal):
+        print('Гав-гав')
+
+class Bull(Animal):
+    
+    def voice(Animal):
+        print('Муууу')
+
+cat1, cat2 = Cat(), Cat()
+dog1, dog2 = Dog(), Dog()
+bull1, bull2 = Bull(), Bull()
+ani = Animal()
+
+farm_band = [cat1, cat2, dog1, dog2, bull1, bull2, ani]
+
+
+for i in farm_band:
+    i.voice()
