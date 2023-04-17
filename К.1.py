@@ -697,6 +697,11 @@ del shoplist
 f = open(shoplistfile, 'rb')
 storedlist = pickle.load( f ) #Завантажу'ємо обєкт з файла 'shoplist.data'
 print(storedlist)
+
+    # Видалення файлів
+path = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'text.txt')
+os.remove(path)
+
     #end.
 
 

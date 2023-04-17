@@ -292,3 +292,25 @@ print(m)
     # 2)filter:
 f = filter(lambda w_l:  w_l[0] * w_l[1] < sum(p)/len(p), measures)
 print(f)
+
+
+# Функції-справочники
+
+#   1)type
+a = 79
+print(type(a))
+
+#   2)vars
+b = ShortInputException()
+print(vars(b))
+
+#   3)dir
+print(dir(b))
+
+#   4)mro
+print(ShortInputException.mro())
+
+#   5)help
+help(b)
+
+
