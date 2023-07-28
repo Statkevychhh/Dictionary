@@ -28,7 +28,6 @@ except EOFError:
 except ShortInputException as ex:
     print('ShortInputException: Довжина введеного рядка - {0}; \
     очікувалось як мінімум - {1}'.format(ex.length, ex.atleast))
-
 else:
     print('Не було помилок! \n', text)
 
@@ -164,6 +163,12 @@ print(c)
 print(d)
 
 
+# Метод symmetric_difference
+x = {'1', '2', '3'}
+y = {'4', '5', '1'}
+z = x.symmetric_difference(y)
+print(z)
+
 
 # Оператор (if .. :) :
 flag = True
@@ -201,7 +206,6 @@ powersum(2, 10)  # 100
 mylist = ['item']
 assert len(mylist) >= 1
 mylist.pop()
-mylist
 
 
 #   2)
@@ -211,7 +215,6 @@ try:
 except AssertionError:
     print('len(mylist) not > 1 !!!')    
 mylist.pop()
-mylist
 
 
 
@@ -314,3 +317,4 @@ print(ShortInputException.mro())
 help(b)
 
 
+# END.
