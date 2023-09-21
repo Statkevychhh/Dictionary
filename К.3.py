@@ -292,9 +292,16 @@ p = [w_l[0] * w_l[1] for w_l in measures]
 m = map(lambda w_l: w_l[0] * w_l[1], measures)  # Отримаємо об'єкт класу map
 print(m)
 
+
     # 2)filter:
 f = filter(lambda w_l:  w_l[0] * w_l[1] < sum(p)/len(p), measures)
 print(f)
+
+
+    # 3)reduce
+massive = [1, 2, 3, 4, 5]
+#reduce(lambda x,y: x+y, massive)
+
 
 
 # Функції-справочники
